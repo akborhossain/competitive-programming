@@ -11,6 +11,7 @@ public class Password {
         for (int i = 0; i <= n; i++) {
             s[i] = input.next();
         }
+        
         int len = s[n].length(),less=0,geter=0;
         for (int i = 0; i <= n; i++) {
             if (len < s[i].length()) {
