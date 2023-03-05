@@ -9,6 +9,7 @@ public class Stack {
     static void push(int n) {
         if (top == capacity - 1) {
             System.out.println("Overflow");
+            
         }
         top++;
         a[top] = n;
