@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter test case:");
+        int t = in.nextInt();
+        int num, tem, sum = 0, r;
+        for (int i = 0; i < t; i++) {
+            System.out.println("Enter your number:");
+            num = in.nextInt();
+            tem = num;
+            while (tem > 0) {
+                r = tem % 10;
+                tem = tem / 10;
+                sum = sum + (r * r * r);
+            }
+            if (sum == num) {
+                System.out.println("Armstrong  number");
+            } else {
+                System.out.println("Not Armstrong  number");
+            }
+
+        }
+    }
+
+}
